@@ -16,7 +16,6 @@ class Fraction:
 
         for i in range(int(min(abs(self.d), abs(self.u))), 1, -1):
             if self.d % i == 0 and self.u % i == 0:
-                # print(self.u/i, self.d/i)
 
                 return Fraction(int(self.u / i), int(self.d / i))
         return Fraction(self.u, self.d)
